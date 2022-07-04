@@ -128,11 +128,9 @@ void write_data(int addr,int data){
 	char c;
 
 	i2c_write((uint8_t)(data>>8));
-	c = (uint8_t)(data>>8);
 	delay1();
 
 	i2c_write((uint8_t)(data & 0xFF));
-	c = (uint8_t)(data&0xFF);
 	delay1();
 
 	i2c_stop();
