@@ -21,9 +21,6 @@
 #include "i2c.h"
 #include "uart.h"
 
-//#define SYST_CSR   *((volatile uint32_t*)0xE000E010)  //SYSTICK CONTROL AND STATUS
-//#define SYST_RVR   *((volatile uint32_t*)0xE000E014)  //SYSTICK RELOAD value
-
 void set_bmp280(void);
 void get_temp(int);
 long temp_calc(long);
@@ -49,18 +46,16 @@ int main(void)
 
 	uart2_config();
 
-//	systick_init();
-
 	set_bmp280();
 
-   for(int i=0;i<2;i++){
+   for(int i=0;i<10;i++){
 	get_temp(3);
 	store_data();
    }
 
 	addrs = 0;
 
-   for(int i=0;i<2;i++){
+   for(int i=0;i<10;i++){
 	get_data(2);
     show_temp();
    }
@@ -197,16 +192,6 @@ void print_temp_values(){
 	send_char('C');
 	send_char('\n');
 }
-
-
-void systick_init(){
-	SYST_RVR = 16000000-1;
-	SYST_CSR |= 0x07UL;
-}
-
-//void SysTick_Handler(void){
-//	send_string("Srujan\n");
-//}
 
 void delay1(){
 	volatile long i;
