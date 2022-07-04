@@ -1,0 +1,7 @@
+../i2c_library/i2c.c:11:6:config_clk	4	static
+../i2c_library/i2c.c:17:6:config_gpio	4	static
+../i2c_library/i2c.c:30:6:config_i2c	4	static
+../i2c_library/i2c.c:45:6:i2c_start	4	static
+../i2c_library/i2c.c:50:6:i2c_stop	4	static
+../i2c_library/i2c.c:54:6:i2c_address	24	static
+../i2c_library/i2c.c:60:6:i2c_write	16	static

@@ -1,0 +1,12 @@
+../Src/main.c:44:5:main	24	static
+../Src/main.c:75:6:set_bmp280	8	static
+../Src/main.c:86:6:get_temp	24	static
+../Src/main.c:109:6:temp_calc	40	static
+../Src/main.c:122:6:write_data	24	static
+../Src/main.c:148:6:get_data	24	static
+../Src/main.c:176:6:store_data	16	static
+../Src/main.c:186:6:show_temp	4	static
+../Src/main.c:190:6:print_temp_values	16	static
+../Src/main.c:202:6:systick_init	4	static
+../Src/main.c:207:6:SysTick_Handler	8	static
+../Src/main.c:211:6:delay1	16	static

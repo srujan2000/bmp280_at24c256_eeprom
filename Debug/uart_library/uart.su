@@ -1,0 +1,4 @@
+../uart_library/uart.c:12:6:uart2_config	4	static
+../uart_library/uart.c:33:6:send_char	16	static
+../uart_library/uart.c:39:6:send_string	24	static
+../uart_library/uart.c:45:9:get_char	16	static

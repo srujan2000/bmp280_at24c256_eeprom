@@ -1,0 +1,6 @@
+"./Src/main.o"
+"./Src/syscalls.o"
+"./Src/sysmem.o"
+"./Startup/startup_stm32f407vetx.o"
+"./i2c_library/i2c.o"
+"./uart_library/uart.o"
